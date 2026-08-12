@@ -1,0 +1,47 @@
+.mentors{
+    justify-content: center;text-align: center;
+}
+.mentors h1{
+    font-size: 40px;
+}
+.mentors p{
+    font-size: 20px; color: gray;
+}
+.btn{
+    display: flex;justify-content: space-between; padding: 50px;
+}
+.container{
+    display: grid; grid-template-columns:  1fr;gap: 70px; height: 900px; 
+}
+.main{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; width: 300px; height: 550px;border-radius: 20px
+}
+.card img{width: 280px;height: 300px;border-radius: 20px
+
+}
+.card p{
+    color: gray;
+}
+.Last{display: flex;align-items: center;
+
+}
+
+.image{position: relative;}
+.image span{
+    position: absolute;bottom: 10px;left: 10px;background-color: rgb(20, 123, 9);color: white;padding: 4px 8px ;border-radius: 5px;
+}
+/* Tablet Mood */
+@media screen and (min-width:768px){
+    .container{
+       grid-template-columns:repeat(2,1fr)  
+    }
+    
+}
+
+
+/* Desktop Mood */
+@media screen and (min-width:1024px){
+    .container{
+       grid-template-columns:repeat(4,300px);justify-content: center;
+    }
+}
