@@ -1,0 +1,41 @@
+
+
+
+.first{
+    display: flex;justify-content: space-evenly;align-items: center;height: 100px; padding: 20px;
+}
+
+.container{
+ display: grid ;grid-template-columns: 500px 500px 500px ; grid-template-rows: 350px 350px ;margin-top: 50px;justify-content: center;
+}
+
+.main{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 350px; padding: 30px; height: 250px; margin-top: 5px;
+}
+.card{
+width: 300px;
+}
+
+.star{
+text-align: center;
+}
+
+.BOX{
+    display: grid ;grid-template-columns: 500px 500px 500px ; grid-template-rows: 450px 450px 450px ;margin-top: 50px;justify-content: center;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; width: 350px; padding: 30px; height: 350px; margin-top: 5px;
+}
+
+.img{
+    width: 300px;
+}
+
+.footer{
+    display: flex;justify-content: space-evenly; align-items: center; height: 300px;
+}
+
+.footer a{
+    color: rgb(177, 172, 172);
+}
