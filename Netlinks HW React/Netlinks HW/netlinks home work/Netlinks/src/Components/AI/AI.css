@@ -1,0 +1,87 @@
+.ai-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  box-sizing: border-box;
+  gap: 60px;
+  background-color: #f5f5f5;
+}
+
+.ai-image {
+  width: 55%;
+  flex-shrink: 0;
+}
+.ai-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ai-content {
+  width: 48%;
+  flex-shrink: 0;
+  text-align: start;
+}
+
+.ai-content h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: black;
+  margin: 0 0 20px;
+}
+.ai-content h1 span {
+  color: #8b5a86;
+  font-style: italic;
+}
+.small-title {
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.description {
+  max-width: 500px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.ai-content ul {
+  padding-left: 18px;
+  margin-top: 25px;
+}
+.ai-content li {
+  position: relative;
+  padding-left: 2px;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 16px;
+}
+ai-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #8b5a86;
+}
+.ai-button {
+  margin-top: 20px;
+  padding: 13px 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background: white;
+  color: #555;
+  font-size: 14px;
+}
+.ai-button::after {
+  content: "↗";
+}
+.ai-button:hover {
+  background: #f5f5f5;
+}

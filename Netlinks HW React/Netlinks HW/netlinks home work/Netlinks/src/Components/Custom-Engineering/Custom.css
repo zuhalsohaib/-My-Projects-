@@ -1,0 +1,77 @@
+.custom-section {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  box-sizing: border-box;
+  gap: 60px;
+  text-align: start;
+  background-color: #f5f5f5;
+}
+
+.custom-content {
+  width: 50%;
+}
+
+.small-title {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 25px;
+}
+.custom-content h1 {
+  font-size: 48px;
+  line-height: 1.08;
+  font-weight: 400;
+  color: black;
+  margin: 0 0 25px;
+}
+
+.custom-content h1 span {
+  color: #8b5a86;
+  font-style: italic;
+}
+.description {
+  max-width: 560px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.custom-content ul {
+  padding-left: 20px;
+  margin-top: 25px;
+}
+
+.custom-content li {
+  color: rgb(76, 73, 73);
+  font-size: 15px;
+  line-height: 1, 5;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+.custom-button {
+  margin-top: 20px;
+  padding: 13px 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background: white;
+  color: #555;
+  font-size: 14px;
+}
+.custom-button:hover {
+  background: #f5f5f5;
+}
+.custom-image {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-image img {
+  width: 100%;
+  height: auto;
+}

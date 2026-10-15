@@ -1,0 +1,111 @@
+
+.wwd {
+  --ink: #17171a;
+  --ink-soft: #5b5b62;
+  --line: #e3e1dd;
+  --paper: #ffffff;
+  --tint: #f6f5f2;
+  --accent: #6d5486;
+  --accent-ink: #ffffff;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 96px 32px 120px;
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.wwd .eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+.wwd .head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+.wwd h2 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 0;
+  max-width: 520px;
+}
+.wwd h2 em {
+  font-style: italic;
+  color: var(--accent);
+}
+.wwd .dek {
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  padding-bottom: 6px;
+}
+.wwd .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.wwd .card {
+  display: block;
+  padding: 34px 30px 38px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+.wwd .card:hover { background: var(--tint); }
+.wwd .grid .card:nth-child(3n) { border-right: none; }
+.wwd .grid .card:nth-child(n + 4) { border-bottom: none; }
+.wwd .card.active { background: var(--tint); }
+.wwd .card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wwd .idx { font-size: 11px; letter-spacing: 0.1em; color: var(--ink-soft); }
+.wwd .go {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  flex: none;
+}
+.wwd .card.active .go {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.wwd .card h3 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 500;
+  font-size: 21px;
+  margin: 0 0 10px;
+}
+.wwd .card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+@media (max-width: 860px) {
+  .wwd .grid { grid-template-columns: 1fr; }
+  .wwd .grid .card { border-right: none; }
+  .wwd .grid .card:last-child { border-bottom: none; }
+  .wwd h2 { font-size: 34px; }
+}
+;

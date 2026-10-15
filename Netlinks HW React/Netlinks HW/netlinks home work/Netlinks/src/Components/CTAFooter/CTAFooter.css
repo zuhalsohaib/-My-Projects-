@@ -1,0 +1,762 @@
+/* =========================================
+   CTA FOOTER
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.cta-footer {
+  width: 100%;
+  background: #ffffff;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   CTA BOX
+========================================= */
+
+.cta-box {
+  position: relative;
+  width: min(1100px, calc(100% - 80px));
+  min-height: 360px;
+  margin: 55px auto 105px;
+  padding: 75px 50px;
+  border-radius: 22px;
+  overflow: hidden;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    #775993 0%,
+    #75558f 50%,
+    #705186 100%
+  );
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   DECORATIVE LINES
+========================================= */
+
+.cta-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+
+  background:
+    radial-gradient(
+      ellipse 70% 45% at 20% 20%,
+      transparent 62%,
+      rgba(255, 255, 255, 0.6) 63%,
+      transparent 64%
+    ),
+    radial-gradient(
+      ellipse 85% 55% at 80% 70%,
+      transparent 62%,
+      rgba(255, 255, 255, 0.6) 63%,
+      transparent 64%
+    ),
+    radial-gradient(
+      ellipse 75% 50% at 15% 100%,
+      transparent 62%,
+      rgba(255, 255, 255, 0.5) 63%,
+      transparent 64%
+    );
+}
+
+
+/* =========================================
+   CTA CONTENT
+========================================= */
+
+.cta-box h2 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  font-size: clamp(40px, 4vw, 56px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.cta-box h2 em {
+  font-style: italic;
+}
+
+.cta-box p {
+  position: relative;
+  z-index: 2;
+
+  margin: 22px 0 32px;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.cta-button {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+
+  padding: 15px 25px;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+  color: #684d83;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+
+  background: #fafafa;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+
+  border-top: 1px solid #eeeeee;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  width: min(1280px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  padding: 65px 0 50px;
+
+  display: grid;
+
+  grid-template-columns:
+    2.2fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 60px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 22px;
+}
+
+/* Logo Image */
+.logo a:first-child {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 38px;
+  height: 38px;
+  display: block;
+  object-fit: contain;
+}
+
+/* Logo Text */
+.logo-text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* net */
+.logo-net {
+  color: #555;
+}
+
+/* links */
+.logo-links {
+  color: #ee725b;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand p {
+  margin: 9px 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #666;
+}
+
+.footer-brand .description {
+  max-width: 330px;
+
+  margin-bottom: 22px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SOCIALS
+========================================= */
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.socials a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  text-decoration: none;
+
+  color: #555;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* SVG ICON */
+
+.socials a img {
+  width: 19px;
+  height: 19px;
+
+  display: block;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+/* HOVER */
+
+.socials a:hover {
+  background: #f4f4f4;
+
+  color: #775993;
+
+  border-color: #d5d5d5;
+
+  transform: translateY(-2px);
+}
+
+.socials a:hover img {
+  transform: scale(1.08);
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.footer-column h4 {
+  margin: 2px 0 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 1.4px;
+
+  color: #777;
+}
+
+.footer-column a {
+  width: fit-content;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #555;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #775993;
+
+  transform: translateX(2px);
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: min(1280px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  padding: 24px 0 28px;
+
+  border-top: 1px solid #eeeeee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 30px;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #777;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.footer-links a {
+  text-decoration: none;
+
+  color: #777;
+
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #775993;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+  .cta-box {
+    width: min(1150px, calc(100% - 100px));
+
+    min-height: 380px;
+
+    padding: 80px 60px;
+  }
+
+  .footer-container {
+    width: min(1380px, calc(100% - 100px));
+
+    gap: 70px;
+  }
+
+  .footer-bottom {
+    width: min(1380px, calc(100% - 100px));
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .cta-box {
+    width: calc(100% - 50px);
+
+    margin-top: 45px;
+    margin-bottom: 80px;
+  }
+
+  .footer-container {
+    width: calc(100% - 50px);
+
+    grid-template-columns:
+      2fr
+      1fr
+      1fr;
+
+    gap: 50px 35px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    width: calc(100% - 50px);
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* =====================================
+     CTA
+  ===================================== */
+
+  .cta-box {
+    width: calc(100% - 28px);
+
+    min-height: 300px;
+
+    margin: 30px auto 60px;
+
+    padding: 60px 22px 45px;
+
+    border-radius: 18px;
+  }
+
+  .cta-box h2 {
+    font-size: 34px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+  }
+
+  .cta-box p {
+    margin: 20px 0 27px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .cta-box p br {
+    display: none;
+  }
+
+  .cta-button {
+    padding: 13px 20px;
+
+    font-size: 13px;
+  }
+
+
+  /* =====================================
+     FOOTER
+  ===================================== */
+
+  .footer-container {
+    width: calc(100% - 40px);
+
+    padding: 45px 0 35px;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 42px 28px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .logo {
+    font-size: 23px;
+
+    margin-bottom: 18px;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+  .footer-brand .description {
+    max-width: 100%;
+
+    line-height: 1.65;
+  }
+
+
+  /* =====================================
+     SOCIALS MOBILE
+  ===================================== */
+
+  .socials {
+    margin-top: 20px;
+
+    gap: 9px;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 8px;
+  }
+
+  .socials a img {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* =====================================
+     FOOTER COLUMNS
+  ===================================== */
+
+  .footer-column {
+    gap: 12px;
+  }
+
+  .footer-column h4 {
+    font-size: 11px;
+
+    margin-bottom: 8px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+
+  /* =====================================
+     FOOTER BOTTOM
+  ===================================== */
+
+  .footer-bottom {
+    width: calc(100% - 40px);
+
+    padding: 20px 0 24px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    font-size: 11px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+
+    gap: 7px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .cta-box {
+    min-height: 275px;
+
+    padding: 50px 17px 38px;
+  }
+
+  .cta-box h2 {
+    font-size: 29px;
+
+    line-height: 1.1;
+  }
+
+  .cta-box p {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    width: 100%;
+
+    max-width: 270px;
+
+    padding: 13px 16px;
+  }
+
+
+  /* FOOTER */
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-column {
+    gap: 11px;
+  }
+
+  .footer-column h4 {
+    font-size: 11px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+  }
+
+
+  /* SOCIALS */
+
+  .socials {
+    gap: 9px;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .socials a img {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* BOTTOM */
+
+  .footer-bottom {
+    width: calc(100% - 30px);
+
+    font-size: 10px;
+  }
+
+  .footer-links {
+    gap: 6px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 340px) {
+
+  .cta-box {
+    width: calc(100% - 20px);
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .cta-box h2 {
+    font-size: 26px;
+  }
+
+  .cta-button {
+    font-size: 12px;
+  }
+
+  .footer-container {
+    width: calc(100% - 30px);
+  }
+
+  .socials a {
+    width: 34px;
+    height: 34px;
+  }
+
+  .socials a img {
+    width: 17px;
+    height: 17px;
+  }
+}
